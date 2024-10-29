@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d2d2b9; 
+    color: #505c49;
+
+}
+
+.MainContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #93b87f;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-color: #505c49;
+    border: 1px solid;
+}
+
+.nav-title {
+    flex-grow: 1;
+    text-align: left; 
+    padding-left: 10px;
+    color:#505c49
+
+}
+
+.Content {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.Left {
+    padding: 10px;
+    width: 15%; 
+    padding-left: 20px;
+
+}
+
+.Left ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Left li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.Left img {
+    width: 40px; 
+    height: auto;
+    margin-right: 10px;
+    border-radius: 20%;
+}
+
+.Center {
+    padding: 20px;
+    width: 60%; 
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    background-color: white; 
+    margin: 21px 0; 
+    border-radius: 10px; 
+}
+
+.Center .main-image {
+    width: 50%; 
+    height: auto;
+    margin-right: 10px; 
+    border-radius: 10px;
+}
+
+.Right {
+    padding: 25px;
+    width: 10%; 
+    text-align: center;
+}
+
+.Right i {
+    display: block; 
+    font-size: 55px; 
+    padding: 10px
+}
+
+@media (max-width: 768px) {
+    .Content {
+        flex-direction: column; 
+    }
+
+    .Left, .Center, .Right {
+        width: 100%; 
+    }
+
+    .nav-title {
+        text-align: left; 
+    }
+}
+
+.header-icon{
+    font-size: 55px;  
+    color:#505c49
+}
+
+.user-icon
+{
+    text-align: center;
+    color: #505c49;
+    font-size: 20px;  
+
+
+}
+.icon
+{
+    font-size: 15px;  
+}
